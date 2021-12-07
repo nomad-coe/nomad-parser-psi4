@@ -53,7 +53,7 @@ class Run(simulation.run.Run):
     x_psi4_memory = Quantity(
         type=np.dtype(np.float64),
         shape=[],
-        unit='MiB',
+        # unit='MiB',
         description='''
         ''')
 
@@ -94,7 +94,7 @@ class System(simulation.system.System):
     x_psi4_rotational_constants = Quantity(
         type=np.dtype(np.float64),
         shape=[3],
-        unit='1/cm',
+        # unit='1/cm',
         description='''
         ''')
 

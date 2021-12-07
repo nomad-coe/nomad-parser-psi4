@@ -40,7 +40,7 @@ def test_scf(parser):
     run = archive.run[-1]
     assert run.program.version == '1.1rc3.dev5'
     assert run.x_psi4_process_id == 22664
-    assert run.x_psi4_memory.magnitude == 500
+    assert run.x_psi4_memory == 500
 
     method = run.method[0]
     assert method.electronic.method == 'RHF'
@@ -56,7 +56,7 @@ def test_scf(parser):
     assert system.atoms.positions[1][1].magnitude == approx(-4.00873327e-11)
     assert system.atoms.labels[2] == 'H'
     assert system.x_psi4_full_point_group == 'C2v'
-    assert system.x_psi4_rotational_constants[2].magnitude == approx(9.50429)
+    assert system.x_psi4_rotational_constants[2] == approx(9.50429)
     assert system.x_psi4_nbeta == 5
 
     calc = run.calculation[0]

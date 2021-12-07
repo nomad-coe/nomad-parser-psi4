@@ -19,13 +19,7 @@ calculations (remember that you can provide more files if you want):
 |Input Filename| Description|
 |--- | --- |
 |`*.out` | **Mainfile:** a plain text file w/ **user-defined** name|
-|`*.files`|plain text; user-defined filenames |
-|`*.in`| plain text, input parameters|
-|`*_o_DDB`|binary file, Derivative DataBases of total energy|
-|`*_o_DEN`|binary file, charge density|
-|`*_o_EIG`|text file, eigenvalues|
-|`*_o_WFK`|binary file, wavefunction|
-|`log` | plain text, redirection of screen output (`stdout`)|
+|`*.dat` |plain text input file|
 
 
 To create an upload with all calculations in a directory structure:
